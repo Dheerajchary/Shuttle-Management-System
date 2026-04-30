@@ -15,10 +15,12 @@ INSERT INTO `users` (`user_id`, `first_name`, `last_name`, `email`, `mobile`, `u
 (14, NULL, NULL, NULL, NULL, 'harsha_vardhan', '$2y$10$1HdwwePdyzDDegweCQgJ.uYqFnF59mfPulv8Bmyco1aH.9UV6k//O', 'user'),
 (15, NULL, NULL, NULL, NULL, 'naveen_reddy', '$2y$10$D5pY.JIZgoFUrkDYooA6IexwQzFdqofexiPrMA.5uJl9yJcTAVHbi', 'user'),
 
+  -- Admin account for system control , admin password is 'admin123' hashed using bcrypt
+(16, NULL, NULL, NULL, NULL, 'admin', '$2y$10$phve48UKHeujfFWuj5aGsuOuoX.YRi./JbvMUocExz8AFdBuhWc1G', 'admin'),
+
 (17, 'Dheeraj', 'k', 'abcd@gmail.com', '8639532999', 'dheeraj', '$2y$10$oQvHbwdCO.ves.zu5Xfe6uFOyRHP56iHbueNYNWBslvvgm61N/HPG', 'user');
 
--- Admin account for system control , admin password is 'admin123' hashed using bcrypt
-(16, NULL, NULL, NULL, NULL, 'admin', '$2y$10$phve48UKHeujfFWuj5aGsuOuoX.YRi./JbvMUocExz8AFdBuhWc1G', 'admin'),
+
 
 INSERT INTO route (route_name, source_point, destination_point) VALUES
 ('Miyapur to Hitech City', 'Miyapur', 'Hitech City'),
