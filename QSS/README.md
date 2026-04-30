@@ -1,25 +1,3 @@
-<div align="center">
-
-<img src="https://img.shields.io/badge/PHP-8.0+-777BB4?style=for-the-badge&logo=php&logoColor=white"/>
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
-<img src="https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"/>
-<img src="https://img.shields.io/badge/XAMPP-Ready-FB7A24?style=for-the-badge&logo=apache&logoColor=white"/>
-
-<br/><br/>
-
-# 🚌 Quick Shuttle Services (QSS)
-
-### A Transport Management System built with PHP & MySQL
-
-<br/>
-
-> *Commuting shouldn't be complicated. QSS is a full-stack web application that brings order to shuttle management — letting passengers book rides in seconds while giving admins complete control over routes, vehicles, and schedules. Built with plain PHP and MySQL, it's lightweight, fast, and straightforward to deploy.*
-
-<br/>
-
-</div>
-
----
 ## 📸 Screenshots
 
 ### 🏠 Home Page
@@ -77,23 +55,23 @@ Overview of vehicles, routes, and bookings with live counts.
 ```
 QSS/
 ├── config/
-│   └── db.php                  ← Single DB connection (reads from .env)
+│   └── db.php
 ├── helpers/
-│   ├── auth.php                ← require_user() / require_admin() guards
-│   └── db_helpers.php          ← Reusable DB utility functions
+│   ├── auth.php
+│   └── db_helpers.php
 ├── public/
 │   └── assets/
-│       ├── css/                ← style.css, footer.css
-│       └── img/                ← Site images
+│       ├── css/
+│       └── img/
 ├── views/
-│   ├── layout/                 ← Shared partials: head, navbar, footer
-│   ├── user/                   ← Passenger-facing pages
-│   └── admin/                  ← Admin-only pages
-├── actions/                    ← Form handlers (booking, delete, confirm, logout)
+│   ├── layout/
+│   ├── user/
+│   └── admin/
+├── actions/
 ├── database/
-│   ├── database.sql            ← Schema — run this first
-│   └── tables_data.sql         ← Sample data
-├── .env.example                ← Copy to .env and fill credentials
+│   ├── database.sql
+│   └── tables_data.sql
+├── .env.example
 ├── .gitignore
 └── README.md
 ```
@@ -103,7 +81,7 @@ QSS/
 ## ⚙️ Setup & Installation
 
 ### Prerequisites
-- [XAMPP](https://www.apachefriends.org/) (PHP 8.0+, MySQL)
+- XAMPP (PHP 8.0+, MySQL)
 - Git
 
 ### Steps
@@ -119,13 +97,12 @@ Copy the QSS folder into:  C:\xampp\htdocs\QSS
 ```
 
 **3. Set up the database**
-- Start **Apache** and **MySQL** in XAMPP Control Panel
-- Open `http://localhost/phpmyadmin`
-- Import `database/database.sql` first, then `database/tables_data.sql`
+- Start Apache and MySQL in XAMPP Control Panel
+- Open http://localhost/phpmyadmin
+- Import database/database.sql first, then database/tables_data.sql
 
 **4. Configure environment**
 ```bash
-# Copy the example env file
 cp .env.example .env
 ```
 Edit `.env` with your local values:
@@ -156,15 +133,14 @@ http://localhost/QSS/views/user/home.php
 
 ---
 
-
 ## 🛠️ Tech Stack
 
 | Layer | Technology |
 |-------|------------|
-| Backend | PHP 8.0+ (plain PHP, no framework) |
+| Backend | PHP 8.0+ |
 | Database | MySQL via MySQLi |
-| Frontend | Bootstrap 5.3, Font Awesome 6 |
-| Local Server | XAMPP (Apache + MySQL) |
+| Frontend | Bootstrap 5.3 |
+| Local Server | XAMPP |
 | Version Control | GitHub |
 
 ---
@@ -173,14 +149,13 @@ http://localhost/QSS/views/user/home.php
 
 | Table | Description |
 |-------|-------------|
-| `users` | Passengers and admins (role-based) |
+| `users` | Passengers and admins |
 | `booking` | Shuttle booking records |
-| `route` | Route definitions (source → destination) |
-| `schedule` | Bus stop timings per route |
+| `route` | Route definitions |
+| `schedule` | Bus stop timings |
 | `vehicle` | Driver and vehicle registry |
 
 ---
-
 
 <div align="center">
 
