@@ -20,6 +20,39 @@
 </div>
 
 ---
+## 📸 Screenshots
+
+### 🏠 Home Page
+Landing page where passengers can see available routes and get started.
+<p align="center">
+  <img src="public/assets/img/home_page.jpeg" width="600"/>
+</p>
+
+### 📅 User Booking
+Passengers can book shuttles by giving their date, pickup and destination details.
+<p align="center">
+  <img src="public/assets/img/user_booking_request.jpeg" width="600"/>
+</p>
+
+### 🛡️ Admin Booking
+Admins can view, confirm, or delete passenger bookings from a central dashboard.
+<p align="center">
+  <img src="public/assets/img/bookings_admin.jpeg" width="600"/>
+</p>
+
+### 🔐 Login
+Secure login system for both passengers and admins.
+<p align="center">
+  <img src="public/assets/img/login.png" width="600"/>
+</p>
+
+### 📊 Admin Dashboard
+Overview of vehicles, routes, and bookings with live counts.
+<p align="center">
+  <img src="public/assets/img/admin_home_page.png" width="600"/>
+</p>
+
+---
 
 ## ✨ Features
 
@@ -151,6 +184,6 @@ http://localhost/QSS/views/user/home.php
 
 <div align="center">
 
-Made with ❤️ by [Dheeraj Chary](https://github.com/Dheerajchary)
+Made by [Dheeraj Kumar Vadla](https://github.com/Dheerajchary)
 
 </div>
